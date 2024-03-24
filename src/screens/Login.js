@@ -37,7 +37,7 @@ const LoginScreen = ({navigation}) => {
           </View>
           <TouchableOpacity 
           style={styles.loginButton}
-          onPress={() => navigation.navigate('Quiz')}>
+          onPress={() => navigation.navigate('Homescreen')}>
             <Text style={styles.loginButtonText}>Login</Text>
           </TouchableOpacity>
           <View style={styles.separatorContainer}>

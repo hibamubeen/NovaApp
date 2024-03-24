@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import homepage from '../../assets/homepage.png';
 
-const Homescreen = () => {
+const Homescreen = ({navigation}) => {
 
   return (
     <ImageBackground source={homepage} style={styles.background}>
@@ -17,19 +17,29 @@ const Homescreen = () => {
         <Text style={styles.welcome}>Welcome, Hiba!</Text>
         <Text style={styles.events}>EVENTS NEAR YOU</Text>
       </View>
-      <TouchableOpacity style={styles.event1}>
+      <TouchableOpacity style={styles.event1}
+      onPress={() => navigation.navigate('Matching')}>
         <Image
           source={require('../../assets/wehack.png')}
           style={styles.clickableImage}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.event2}>
+      <TouchableOpacity style={styles.event2}
+      onPress={() => navigation.navigate('Matching')}>
         <Image
           source={require('../../assets/fair.png')}
           style={styles.clickableImage}
         />
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.messageButton}
+      onPress={() => navigation.navigate('Quiz')}>
+        <Text style={styles.messageButtonText}>Take Quiz!</Text>
+      </TouchableOpacity>
+
     </ImageBackground>
+
+
   );
 };
 
@@ -76,6 +86,19 @@ const styles = StyleSheet.create({
     resizeMode: 'stretch',
 
   },
+  messageButton: {
+    backgroundColor: 'purple', // Use your specific color
+    borderRadius: 25,
+    paddingVertical: 12,
+    paddingHorizontal: 50,
+    alignSelf: 'center',
+    marginBottom: 30
+  },
+  messageButtonText: {
+    fontSize: 22,
+    color: 'white',
+    textAlign: 'center',
+  }
 });
 
 export default Homescreen;

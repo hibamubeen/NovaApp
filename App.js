@@ -6,6 +6,8 @@ import LoginScreen from './src/screens/Login';
 import QuizScreen from './src/screens/Quiz';
 import QuizScreen2 from './src/screens/Quiz2';
 import Homepage from './src/screens/Homescreen';
+import MatchingPage from './src/screens/Matching';
+import ChatScreen from './src/screens/Chat';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +42,17 @@ export default function App() {
         <Stack.Screen
           name="Homescreen"
           component={Homepage}
+          options={{ headerShown: false}}
+        />  
+        <Stack.Screen
+          name="Matching"
+          component={MatchingPage}
+          options={{ headerShown: false}}
+        />  
+
+        <Stack.Screen
+          name="Chat"
+          component={ChatScreen}
           options={{ headerShown: false}}
         />  
 
