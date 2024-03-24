@@ -15,7 +15,7 @@ import swirlBottom from '../../assets/login/swishh.png';
 import gradientBackground from '../../assets/login/gradientBackground.png';
 
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <ImageBackground source={gradientBackground} style={styles.background}>
@@ -35,7 +35,9 @@ const LoginScreen = () => {
               style={styles.input}
             />
           </View>
-          <TouchableOpacity style={styles.loginButton}>
+          <TouchableOpacity 
+          style={styles.loginButton}
+          onPress={() => navigation.navigate('Quiz')}>
             <Text style={styles.loginButtonText}>Login</Text>
           </TouchableOpacity>
           <View style={styles.separatorContainer}>

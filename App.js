@@ -3,6 +3,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LandingPage from './src/screens/LandingPage';
 import LoginScreen from './src/screens/Login';
+import QuizScreen from './src/screens/Quiz';
+import QuizScreen2 from './src/screens/Quiz2';
+import Homepage from './src/screens/Homescreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +24,24 @@ export default function App() {
           component={LoginScreen}
           options={{ headerShown: false}}
         />
+
+        <Stack.Screen
+          name="Quiz"
+          component={QuizScreen}
+          options={{ headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="Quiz2"
+          component={QuizScreen2}
+          options={{ headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="Homescreen"
+          component={Homepage}
+          options={{ headerShown: false}}
+        />  
 
       </Stack.Navigator>
     </NavigationContainer>
