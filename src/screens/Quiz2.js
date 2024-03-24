@@ -47,6 +47,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: '80%', // Adjust width as necessary
     alignItems: 'center',
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
  input: {
     color: '#7a42f4', // Purple text color
@@ -61,6 +65,10 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     marginTop: 30,
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   enterButtonText: {
     color: 'white',

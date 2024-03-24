@@ -62,6 +62,10 @@ const styles = StyleSheet.create({
     fontSize: 40,
     color: 'white',
     textAlign: 'center',
+    fontFamily: 'Cochin',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   profileContainer: {
     flexDirection: 'row',
@@ -73,13 +77,16 @@ const styles = StyleSheet.create({
     height: 175,
     borderRadius: 300, // Make it round
     borderWidth: 2,
-    borderColor: '#5A008F',
+    borderColor: '#5A008F'
   },
   footer: {
-    fontFamily: 'IMFellGreatPrimer-Regular',
     fontSize: 35,
     color: 'white',
     textAlign: 'center',
+    fontFamily: 'Cochin',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   messageButton: {
     backgroundColor: 'purple', // Use your specific color
@@ -87,12 +94,20 @@ const styles = StyleSheet.create({
     paddingVertical: 23,
     paddingHorizontal: 50,
     alignSelf: 'center',
-    marginBottom: 30
+    marginBottom: 30,
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   messageButtonText: {
     fontSize: 22,
     color: 'white',
     textAlign: 'center',
+    fontFamily: 'Cochin',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   matchStar: {
     paddingHorizontal: 40,

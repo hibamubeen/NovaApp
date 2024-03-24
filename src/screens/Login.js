@@ -30,7 +30,7 @@ const LoginScreen = ({navigation}) => {
           <View style={styles.inputContainer}>
             <Image source={iconLock} style={styles.icon} />
             <TextInput
-              placeholder="Password"
+              placeholder="  Password"
               secureTextEntry
               style={styles.input}
             />
@@ -82,13 +82,16 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 44,
     fontWeight: 'bold',
-    fontFamily: 'MyCustomFont',
     color: '#594DAD',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   loginText: {
     color: '#606060',
     marginBottom: 20,
     opacity:0.7,
+    fontFamily: 'Cochin'
   },
   inputContainer: {
     flexDirection: 'row',
@@ -104,6 +107,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 20,
     opacity:1,
+    fontFamily: 'Cochin'
   },
   loginButton: {
     backgroundColor: '#594DAD',
@@ -111,10 +115,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 60,
     borderRadius: 25,
     marginBottom: 20,
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   loginButtonText: {
     color: 'white',
     fontSize: 22,
+    fontFamily: 'Cochin'
   },
   separatorContainer: {
     flexDirection: 'row',
@@ -130,9 +139,11 @@ const styles = StyleSheet.create({
   orText: {
     color: '#7a42f4',
     paddingHorizontal: 10,
+    fontFamily: 'Cochin'
   },
   createAccountText: {
     color: '#8777F7',
+    fontFamily: 'Cochin'
   },
   swirlBottom: {
     position: 'absolute',

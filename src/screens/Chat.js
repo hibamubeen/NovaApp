@@ -93,6 +93,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 22,
     marginLeft: 10,
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   messagesContainer: {
     flex: 1,
@@ -104,10 +107,19 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginTop: 8,
     maxWidth: '70%',
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
+    
   },
   myMessage: {
     alignSelf: 'flex-end',
     backgroundColor: '#6a51ae',
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   otherMessage: {
     alignSelf: 'flex-start',
@@ -128,6 +140,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center', // Align items in the center
     alignItems: 'center', // Align items in the center
     padding: 15,
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   input: {
     flex: 1,
@@ -140,7 +156,7 @@ const styles = StyleSheet.create({
   sendButton: {
     padding: 10,
     borderRadius: 25,
-    backgroundColor: '#6a51ae',
+    backgroundColor: '#6a51ae'
   },
   img: {
     height: 45,

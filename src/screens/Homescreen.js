@@ -15,7 +15,7 @@ const Homescreen = ({navigation}) => {
     <ImageBackground source={homepage} style={styles.background}>
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome, Hiba!</Text>
-        <Text style={styles.events}>EVENTS NEAR YOU</Text>
+        <Text style={styles.events}>Events Near You</Text>
       </View>
       <TouchableOpacity style={styles.event1}
       onPress={() => navigation.navigate('Matching')}>
@@ -59,14 +59,22 @@ const styles = StyleSheet.create({
     color: 'white',
     justifyContent: "flex-start",
     right: 70,
-    top: 80
+    top: 80,
+    fontFamily: 'Cochin',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   events: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: 'bold',
     color: 'white',
     position: 'absolute',
     top: 170,
+    fontFamily: 'Cochin',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1.5,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
   },
   clickableImage: {
     width: 210,
@@ -92,12 +100,17 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 50,
     alignSelf: 'center',
-    marginBottom: 30
+    marginBottom: 30,
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   messageButtonText: {
     fontSize: 22,
     color: 'white',
     textAlign: 'center',
+    fontFamily: 'Cochin'
   }
 });
 

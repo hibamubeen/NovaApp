@@ -67,10 +67,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: '#7a42f4', // Purple text color
-    marginBottom: 10,
+    marginBottom: 10
   },
   subHeader: {
-    fontSize: 24,
+    fontSize: 20,
     marginBottom: 20,
   },
   goalsList: {
@@ -85,6 +85,10 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     width: '80%', // Adjust width as necessary
     alignItems: 'center',
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   goalButtonText: {
     color: '#7a42f4', // Purple text color
@@ -96,6 +100,10 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     marginTop: 20,
+    shadowColor: '#000', // Shadow color
+    shadowOffset: { width: 2, height: 4 }, // Shadow direction and distance
+    shadowOpacity: 0.3, // Shadow opacity
+    shadowRadius: 3,
   },
   enterButtonText: {
     color: 'white',
