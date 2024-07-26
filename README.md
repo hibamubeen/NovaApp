@@ -1,11 +1,11 @@
 # Nova
 
 **Description**
-Networking application for individuals looking to expand their network by matching with people with similar goals and attending career-centric events with their new connections.
+**Networking:** application for individuals looking to expand their network by matching with people with similar goals and attending career-centric events with their new connections.
 
 **Built With:** Figma, JavaScript, React Native, Expo Snack
 
-**Inspiration** Entering the job market and expanding your career network without a friend or mentor can be intimidating.
+**Inspiration:** Entering the job market and expanding your career network without a friend or mentor can be intimidating.
 
 ## What it does
 NOVA helps get you out of your comfort zone and expand your connections. The app will ask the user to take a quiz and select events the user would like to go to. NOVA will then collect that data and match the user with another user who would also like to go to the same event.
