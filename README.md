@@ -1,7 +1,7 @@
 # Nova
 
 **Description**
-- Networking application for individuals looking to expand their network by matching with people with similar goals and attending career-centric events with their new connections.
+Networking application for individuals looking to expand their network by matching with people with similar goals and attending career-centric events with their new connections.
 
 **Built With:** Figma, JavaScript, React Native, Expo Snack
 
