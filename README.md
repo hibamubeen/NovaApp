@@ -22,5 +22,5 @@ We're proud of how much we were able to do in 24 hours. We implemented almost al
 ## What we learned
 Due to the limited time frame of our project, we learned to pivot and adapt when ideas or features were no longer ideal to implement. ​We also learned early on that focusing on a few main features was more efficient than creating multiple small features.
 
-What's next for NOVA
+## What's next for NOVA
 We plan to implement a location verification to ensure users are actually going to the events. We also hope to introduce a gamification aspect in which users can gain points by attending events and making connections, and they can trade in these points for prizes.
